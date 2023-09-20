@@ -13,6 +13,21 @@
         body {
             background-color: aqua;
         }
+        .grid-container {
+            z-index: 0;
+            display: grid;
+            grid-template-columns: 80px 200px auto 30px;
+            gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+        }
+        .grid-container > div {
+            z-index: 0;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
         p {
             z-index: 0;
         }
@@ -23,8 +38,8 @@
     <!--
         TODO: (other than adding the shit)
         - putting 2 paragraphs next to eachother
-            - worst case scenario just do relative it SHOULD keep the same properties when resizing
-                - if that is the case then relative is due to 
+        - maybe div?
+        - either way section off elements by div better standards
     -->
 
 
@@ -33,32 +48,36 @@
         New Orleans, LA | 443-642-0607 | wwdeveas@my.loyno.edu| <a href=https://www.linkedin.com/in/walter-deveas-63a842286>LinkedIn</a> | 
         <a href=https://github.com/wwdeveas/Projects>Personal Projects</a>
     </h4>
-    
-    <p style="position: relative;">
-        Loyola University of New Orleans:
-        <ul style="position: relative;">
-            <li>Bachelor of Science in Computer Science</li>
-            <li>Expected May 2024</li>
-        </ul>
-    </p>
 
 
-    <p style="position: relative;">
-        Course Work:
-        <ul style="position: relative;">
-            <li>Data Structures</li>
-            <li>Machine Learning</li>
-            <li>Artificial Intelligence</li>
-            <li>Linear Algebra</li>
-            <li>Calculus II</li>
-            <li>Computer Organization</li>
-            <li>Relational Databases</li>
-            <li>Object Oriented Programming</li>
-        </ul>
-    </p>
+    <div class="grid-container">
+        <div>
+            <p style="position: relative;">
+                Loyola University of New Orleans:
+                <ul style="position: relative;">
+                    <li>Bachelor of Science in Computer Science</li>
+                    <li>Expected May 2024</li>
+                </ul>
+            </p>
+        </div>
 
+        <div>
+            <p style="position: relative;">
+                Course Work:
+                <ul style="position: relative;">
+                    <li>Data Structures</li>
+                    <li>Machine Learning</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Linear Algebra</li>
+                    <li>Calculus II</li>
+                    <li>Computer Organization</li>
+                    <li>Relational Databases</li>
+                    <li>Object Oriented Programming</li>
+                </ul>
+            </p>
+        </div>
 
-
+    </div>
 
     <!--position parameters are how far they are away from the original position which is (0,0) because it automatically adjusts to under the last element-->
     
