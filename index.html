@@ -2,165 +2,28 @@
 <html>
 <head>
     <title>Walter DeVeas Resume</title>
-    <style>
-        h1 {
-            text-align: center;
-        }
-        h3 {
-            text-align: center;
-        }
-        h4 {
-            text-align:center;
-            /*will not see this work if we dont need to scroll*/
-            position: sticky;
-            top: 0;
-            padding: 5px;
-        }
-        body {
-            background-color: rgb(165, 236, 245);
-        }
-        .grid-container {
-            z-index: 0;
-            display: grid;
-            /*1fr, 2fr, ... evenly divides it
-            auto fits the container to the content*/
-            grid-template-columns: auto;
-            gap: 10px;
-            background-color: rgb(11, 153, 209);
-            padding: 10px;
-        }
-        .grid-container > div {
-            z-index: 0;
-            background-color: rgb(255, 255, 255);
-            text-align: center;
-            padding: 20px 0;
-            font-size: 30px;
-        }
-        p {
-            z-index: 0;
-        }
-        ul {
-            list-style-type: none;
-        }
-        .list {
-            display: inline;
-            margin-right: 30px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
-    <!--
-        TODO: (other than adding the shit)
-        - putting 2 paragraphs next to eachother
-        - maybe div?
-        - either way section off elements by div better standards
-    -->
-
-
-    <h1>Walter DeVeas</h1>
+    <h1 style="font-size: 60px;">Walter DeVeas</h1>
     <h4 style="z-index: 1; border: 1px solid black; background-color: bisque;">
         New Orleans, LA | 443-642-0607 | wwdeveas@my.loyno.edu | <a href=https://www.linkedin.com/in/walter-deveas-63a842286>LinkedIn</a> | 
         <a href=https://github.com/wwdeveas/Projects>Personal Projects</a>
     </h4>
 
-
-    <h3>School</h3>
     <div class="grid-container">
         <div>
-            <p style="position: static;">
-                Loyola University of New Orleans:
-                <ul style="position: static;">
-                    <li>Bachelor of Science in Computer Science</li>
-                    <li>Expected May 2024</li>
-                </ul>
-            </p>
-        </div>
-
-        <div>
-            <p style="position: static;">
-                <div class="list">
-                    <ul style="position: static;">
-                        Course Work:
-                        <br>
-                        <li class="list">Data Structures</li>
-                        <li class="list">Machine Learning</li>
-                        <li class="list">Artificial Intelligence</li>
-                        <li class="list">Linear Algebra</li>
-                        <br>
-                        <li class="list">Calculus II</li>
-                        <li class="list">Computer Organization</li>
-                        <li class="list">Relational Databases</li>
-                        <li class="list">Object Oriented Programming</li>
-                    </ul>
-                </div>
-            </p>
-        </div>
-    </div>  
-
-    <h3>Experience</h3>
-    <div class="grid-container">
-        <div>
-            <p style="position: static;">
-                Our Harvest<br>Busser
-                <ul style="position: static;">
-                    <li>Maintained the flow of production in a fast-paced environment</li>
-                    <li>Collaborated with my co-workers to make the entire restaurant run as efficiently as possible</li>
-                    <li>Engaged with the customers to make sure they have a pleasant experience as well as handling any issues they may have</li>
-                </ul>
-            </p>
+            <a href="school.html"><h2>School</h2></a>
         </div>
         <div>
-            <p style="position: static;">
-                Uber Bagels & Deli<br>Closing Manager
-                <ul style="position: static;">
-                    <li>Managed the closing staff as well as being responsible for their output</li>
-                    <li>Engaged with customers to resolve any issues and ensure a pleasant experience</li>
-                </ul>
-            </p>
+            <a href="experience.html"><h2>Experience</h2></a>
         </div>
         <div>
-            <p style="position: static;">
-                PJs Coffee of New Orleans<br>Shift Lead
-                <ul style="position: static;">
-                    <li>Engaged in customer service to make a pleasant experience for the customers</li>
-                    <li>Resolved any issues the customer may have or may be occurring at the store</li>
-                    <li>Manage the employees on the shift</li>
-                </ul>
-            </p>
+            <a href="skills.html"><h2>Skills</h2></a>
+        </div>
+        <div>
+            <a href="projects.html"><h2>Projects</h2></a>
         </div>
     </div>
-
-    <h3>Skills</h3>
-
-    <div class="grid-container">
-        <div> 
-            <p style="position: static;">
-                Languages
-                <ul style="position: static;">
-                    <li class="list">C++</li>
-                    <li class="list">Java</li>
-                    <li class="list">HTML</li>
-                    <br>
-                    <li class="list">Python</li>
-                    <li class="list">SQL</li>
-                    <li class="list">CSS</li>
-                </ul>
-            </p>
-        </div>
-        <div style="text-align: center;">
-            <p style="display: inline; text-align: left;">
-                Career Skills
-                <ul style="position: static;">
-                    <li>Problem Solving</li>
-                    <li>Collaboration</li>
-                    <li>Leadership</li>
-                </ul>
-            </p>
-        </div>        
-    </div>
-    
-    
-
 </body>
 </html>
